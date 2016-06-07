@@ -1,0 +1,68 @@
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.heart-map{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.jumbotron{
+    background-color: #C00000;
+}
+@font-face{
+    font-family: "Russo";
+    src: url("RussoOne-Regular.ttf");
+}
+.super-header{
+    text-align: center;
+    font-family: "Russo" "Verdana";
+    color: #FFFFFF;
+}
+@font-face{
+    font-family: "Droid";
+    src: url("DroidSans.ttf");
+}
+p{
+    font-family: "Droid" "Verdana";
+    font-size: 1.1em;
+    text-indent: 0.3em;
+}
+@font-face{
+    font-family: "Ubuntu";
+    src: url("Ubuntu-Bold.ttf");
+}
+.nav-link{
+    font-family: "Ubuntu" "Consolas" serif;
+    font-size: 1.05em;
+    color: #FFFFFF;
+}
+
+.first{
+    background-color: #6A0000;
+    height: 70vh;
+}
+.second-split-1{
+    background-color: black;
+    height: 30vh;
+    width: 33.1%;
+    display: inline-block;
+}
+.second-split-2{
+    background-color: blue;
+    height: 30vh;
+    width: 33.1%;
+    display: inline-block;
+}
+.second-split-3{
+    background-color: green;
+    height: 30vh;
+    width: 33.1%;
+    display: inline-block;
+}
+
+.heady{
+    font-family: "Ubuntu";
+    font-size: 2em;
+    color: #AE0000;
+}
