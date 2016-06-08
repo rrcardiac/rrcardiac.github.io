@@ -9,7 +9,57 @@
         
         <script type = "text/javascript" src = "js/jquery/jquery-1.11.2.min.js"></script>
         <script type = "text/javascript" src = "js/bootstrap/bootstrap.js"></script>
+        
+        
+        
+        <script>
+            $(document).ready(function(){
+                $('#superiorVenaCava').click(function(e){
+                    e.preventDefault();
+                    $("#theCapt").html("The Superior Vena Cava is the entry point for blood from the top of the body");
+                });
+                $('#inferiorVenaCava').click(function(e){
+                    e.preventDefault();
+                    $("#theCapt").html("The Inferior Vena Cava is the entry point for blood from the lower part of the body");
+                });
+                $("#secondInferior").click(function(e){
+                    e.preventDefault();
+                    $("#theCapt").html("The Inferior Vena Cava is the entry point for blood from the lower part of the body");
+                });
+                $("#rightAtrium").click(function(e){
+                    e.preventDefault();
+                    $("#theCapt").html("The Right Atrium is the collection point for blood when it comes into the heart from the body");
+                });
+                $("#rightVentricle").click(function(e){
+                    e.preventDefault();
+                    $("#theCapt").html("After passing through the right AV valve, blood comes into the Right Ventricle, which pumps it into the Pulmonary Artery on its way to the lungs");
+                });
+                $("#pulmonaryArtery").click(function(e){
+                    e.preventDefault();
+                    $("#theCapt").html("The Pulmonary Arteries move blood into the lungs where it will be oxygenated");
+                });
+                $("#pulmonaryVein").click(function(e){
+                    e.preventDefault();
+                   $("#theCapt").html("The Pulmonary Vein transports blood back into the heart after it is oxygenated"); 
+                });
+                $("#leftAtrium").click(function(e){
+                    e.preventDefault();
+                    $("#theCapt").html("The Left Atrium is the collection point for oxygenated blood that enters the heart from the lungs");
+                });
+                $("#leftVentricle").click(function(e){
+                    e.preventDefault();
+                   $("#theCapt").html("The Left Ventricle collects blood from the Left Atrium and pumps it up toward the top (and also bottom) of the heart"); 
+                });
+                $("#aorta").click(function(e){
+                    e.preventDefault();
+                    $("#theCapt").html("The Aorta is the place where oxygenated blood leaves the heart and moves toward the rest of the body's muscles, tissues, and other organs");
+                });
+            });
+                
+        </script>
+        
     </head>
+    
     
     <body>
         <nav class = "navbar navbar-default">
@@ -38,12 +88,30 @@
                 <h1 class = "super-header">Anatomy of the Heart</h1>
             </section><hr>
             <section>
-                <map></map>
-                <img class = "heart-map" src = "images/heart-diagram.png" />
+                <figure>
+                    <img src="images/heart-diagram.png" class = "centered" usemap = "#theMap"/>
+                    <section style = "width: 40vw; margin-left: auto; margin-right: auto;"><figcaption id = "theCapt">Click each part of the heart diagram to learn more about that part in the heart!</figcaption></section>
+                </figure>
+                
+                <map name = "theMap">
+                    <area shape = "rect" id = "superiorVenaCava" coords="110, 10, 234, 260" href="#">
+                    <area shape = "rect" id = "inferiorVenaCava" coords="144, 444, 200, 569" href="#">
+                    <area shape = "rect" id = "secondInferior" coords = "92, 571, 250, 595" href = "#">
+                    
+                    <area shape = "rect" id = "rightAtrium" coords = "151, 266, 246, 343" href = "#">
+                    <area shape = "rect" id = "rightVentricle" coords = "231, 388, 357, 466" href = "#">
+                    <area shape = "rect" id = "leftVentricle" coords = "360, 353, 458, 465" href = "#">
+                    <area shape = "rect" id = "leftAtrium" coords = "318, 224, 426, 282" href = "#">
+                    
+                    <area shape = "rect" id = "aorta" coords = "235, 36, 378, 131" href = "#">
+                    
+                    <area shape = "poly" id = "pulmonaryArtery" coords = "252, 329, 276, 154, 447, 134, 452, 108, 543, 110, 539, 173, 339, 188, 307, 352, 252, 329" href = "#">
+                    
+                    <area shape = "rect" id = "pulmonaryVein" coords = "400, 185, 587, 282" href = "#">
+                </map>
             </section>
-            
+            <br>
             <section class = "main-content">
-                <hr>
                 <p>
                     Veins deposit deoxygenated blood, since much of the oxygen has been extracted by the tissues, and wastes such as carbon dioxide was picked up.  This becomes transported into the <b>inferior vena cava</b> and to the <b>superior vena cava</b>. Blood then flows through to the <b>right atrium</b>. 
                 </p>
