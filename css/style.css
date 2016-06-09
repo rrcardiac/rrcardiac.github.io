@@ -51,7 +51,6 @@ p{
     font-size: 1.05em;
     background-color: #FFFFFF;
 }
-
 .first{
     background-color: transparent;
     height: 71vh;
@@ -96,4 +95,9 @@ figcaption{
 }
 li{
     font-family: "Droid";
+}
+hr{
+    height: 5px;
+    background-color: #6A0000;
+    color: #6A0000;
 }
